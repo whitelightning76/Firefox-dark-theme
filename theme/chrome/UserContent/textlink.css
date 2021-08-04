@@ -1,0 +1,37 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                          TEXTLINKS                                                         -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") { 
+
+
+
+a,
+.text-link,
+.text-link:visited 
+.a11y-link-button,
+.sidebar-footer-button,
+button[action="link"]:not([disabled="true"]),
+button[data-l10n-id="discopane-notice-learn-more"]:not([disabled="true"]) { color: var(--theme-text-default) !important;
+																			text-decoration: underline !important;
+																			background: transparent !important;
+																			border: none !important;
+																			box-shadow: none !important; }
+
+a:hover,
+.text-link:hover,
+.a11y-link-button:hover,
+.sidebar-footer-button:hover,
+button[action="link"]:not([disabled="true"]):hover,
+button[data-l10n-id="discopane-notice-learn-more"]:not([disabled="true"]):hover { color: var(--theme-text-selected) !important;
+																				  filter: brightness(150%) !important;
+																				  background: transparent !important;
+																				  border: none !important;
+																				  box-shadow: none !important; }
+
+.text-link:-moz-focusring { outline: transparent !important; }
+
+
+
+																									}

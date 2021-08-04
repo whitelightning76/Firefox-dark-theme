@@ -1,0 +1,162 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                        POPUPS                                                              -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+:root * {
+
+    --dark-menuitem-hover-background-color: var(--theme-button-hover-bgcolor) !important;
+    --dark-menu-background-color: var(--theme-menu-background) !important;
+    --dark-menu-color: var(--theme-menu-text-default) !important;
+    --dark-menu-disabled-color: var(--theme-menu-text-disabled) !important;
+    --dark-menu-border-color: var(--theme-menu-border-color) !important;
+    --dark-menu-icon-opacity: 1 !important;
+
+    --menuitem-hover-background-color: var(--dark-menuitem-hover-background-color) !important;
+    --menu-background-color: var(--dark-menu-background-color) !important;
+    --menu-color: var(--dark-menu-color) !important;
+    --menu-disabled-color: var(--dark-menu-disabled-color) !important;
+    --menu-border-color: var(--dark-menu-border-color) !important;
+    --menu-icon-opacity: var(--dark-menu-icon-opacity) !important;
+
+}
+
+
+
+
+
+/* Base */
+#backForwardMenu,
+#contentAreaContextMenu,
+#customizationPaletteItemContextMenu,
+#customizationPanelItemContextMenu,
+#customization-toolbar-menu,
+#downloadsContextMenu,
+#new-tab-button-popup,
+#pageActionContextMenu,
+#PlacesChevronPopup,
+#placesContext,
+.search-one-offs-context-menu,
+#SyncedTabsSidebarContext,
+#SyncedTabsSidebarTabsFilterContext,
+#tabContextMenu,
+#tabs-newtab-button-popup,
+#textbox-contextmenu,
+.textbox-contextmenu,
+#toolbar-context-menu,
+#toolbox-menu,
+#widget-overflow > #customizationPanelItemContextMenu,
+#back-button > menupopup,
+#backForwardMenu menupopup,
+#contentAreaContextMenu menupopup,
+#customizationPaletteItemContextMenu menupopup,
+#customizationPanelItemContextMenu menupopup,
+#customization-toolbar-menu menupopup,
+#downloadsContextMenu menupopup,
+#forward-button > menupopup,
+#main-menubar menupopup,
+#new-tab-button-popup menupopup,
+#pageActionContextMenu menupopup,
+#PlacesChevronPopup menupopup,
+#placesContext menupopup,
+#PlacesToolbarItems .bookmark-item menupopup,
+.search-one-offs-context-menu menupopup,
+#SyncedTabsSidebarContext menupopup,
+#tabContextMenu menupopup,
+#textbox-contextmenu menupopup,
+.textbox-contextmenu menupopup,
+#toolbar-context-menu menupopup,
+toolbar .toolbarbutton-1 > menupopup,
+#toolbox-menu menupopup,
+#viewButton > menupopup,
+#widget-overflow > #customizationPanelItemContextMenu menupopup,
+#back-button > menupopup menupopup,
+#forward-button > menupopup menupopup,
+#viewButton > menupopup menupopup
+{
+	font-size: 14px !important;
+	min-width: 230px !important;
+	font-family: var(--theme-font) !important;
+	border: 1.25px solid var(--theme-outline-menu-grey) !important;
+}
+
+/* default */
+#back-button > menupopup :-moz-any(menuitem, menu):not([disabled="true"]),
+#backForwardMenu :-moz-any(menuitem, menu):not([disabled="true"]),
+#contentAreaContextMenu :-moz-any(menuitem, menu):not([disabled="true"]),
+#customizationPaletteItemContextMenu :-moz-any(menuitem, menu):not([disabled="true"]),
+#customizationPanelItemContextMenu :-moz-any(menuitem, menu):not([disabled="true"]),
+#customization-toolbar-menu :-moz-any(menuitem, menu):not([disabled="true"]),
+#downloadsContextMenu :-moz-any(menuitem, menu):not([disabled="true"]),
+#forward-button > menupopup :-moz-any(menuitem, menu):not([disabled="true"]),
+#main-menubar menupopup :-moz-any(menuitem, menu):not([disabled="true"]),
+#new-tab-button-popup :-moz-any(menuitem, menu):not([disabled="true"]),
+#pageActionContextMenu :-moz-any(menuitem, menu):not([disabled="true"]),
+#PlacesChevronPopup :-moz-any(menuitem, menu):not([disabled="true"]),
+#placesContext :-moz-any(menuitem, menu):not([disabled="true"]),
+#PlacesToolbarItems .bookmark-item menupopup :-moz-any(menuitem, menu):not([disabled="true"]),
+.search-one-offs-context-menu :-moz-any(menuitem, menu):not([disabled="true"]),
+#SyncedTabsSidebarContext :-moz-any(menuitem, menu):not([disabled="true"]),
+#tabContextMenu :-moz-any(menuitem, menu):not([disabled="true"]),
+#tabs-newtab-button-popup :-moz-any(menuitem, menu):not([disabled="true"]),
+.textbox-contextmenu :-moz-any(menuitem, menu):not([disabled="true"]),
+#toolbar-context-menu :-moz-any(menuitem, menu):not([disabled="true"]),
+toolbar .toolbarbutton-1 :-moz-any(menuitem, menu):not([disabled="true"]),
+#toolbox-menu :-moz-any(menuitem, menu):not([disabled="true"]),
+.urlbar-input-box .textbox-contextmenu :-moz-any(menuitem, menu):not([disabled="true"]),
+#viewButton > menupopup :-moz-any(menuitem, menu):not([disabled="true"]),
+#widget-overflow #customizationPanelItemContextMenu :-moz-any(menuitem, menu):not([disabled="true"])
+{	
+	color: var(--theme-text-default) !important;
+	filter: brightness(85%) !important;
+	border: 1px solid transparent !important;
+}
+
+
+
+
+/* Hover */
+#back-button > menupopup :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#backForwardMenu :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#customizationPaletteItemContextMenu :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#customizationPanelItemContextMenu :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#customization-toolbar-menu :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#downloadsContextMenu :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#forward-button > menupopup :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#main-menubar menupopup :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#new-tab-button-popup :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#contentAreaContextMenu :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#pageActionContextMenu :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#PlacesChevronPopup :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#placesContext :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#PlacesToolbarItems .bookmark-item menupopup :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+.search-one-offs-context-menu :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#SyncedTabsSidebarContext :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#tabContextMenu :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#tabs-newtab-button-popup :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+.textbox-contextmenu :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#toolbar-context-menu :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+toolbar .toolbarbutton-1 :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#toolbox-menu :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+.urlbar-input-box .textbox-contextmenu :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#viewButton > menupopup :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#widget-overflow #customizationPanelItemContextMenu :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"])
+{
+	-moz-appearance: none !important;
+	background-image: var(--theme-gradient-purple) !important;
+	color: var(--theme-text-highlight) !important;
+	filter: brightness(125%) !important;
+	border: 1px solid var(--theme-outline-button-purple) !important;
+}
+
+#context-navigation > .menuitem-iconic[_moz-menuactive="true"]:not([disabled="true"]) > .menu-iconic-left > .menu-iconic-icon { background: transparent !important; }
+
+/* bookmarks bar */
+#PlacesToolbarItems toolbarbutton.bookmark-item { border: 1px solid transparent !important; }
+#PlacesToolbar .bookmark-item:hover,#PlacesToolbarItems toolbarbutton.bookmark-item:hover {	background: var(--theme-gradient-purple) !important;
+																							filter: brightness(125%) !important;
+																							border: 1px solid var(--theme-outline-button-purple) !important; }
+
+/*main menubar */
+#main-menubar > menu { font-family: var(--theme-font) !important; }
+
+/* make menu rounder */
+.menupopup-arrowscrollbox { border-radius: 8px !important;  }

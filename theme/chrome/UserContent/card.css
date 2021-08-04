@@ -1,0 +1,134 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                          CARD                                                              -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@-moz-document url-prefix(about:preferences#privacy) {
+
+
+.content-blocking-category { color: var(--theme-text-disabled) !important;
+							 background: var(--theme gradient-cards-grey) !important;
+							 border: 1px var(--theme-outline-grey-border) solid !important;
+							 box-shadow: 0 0 1px var(--theme-outline-grey-shadow) !important; }
+
+.content-blocking-category:hover { color: var(--theme-text-notselected) !important;
+								   filter: brightness(125%) !important;
+								   background: var(--theme-gradient-cards-grey-active) !important;
+								   border: 1px var(--theme-outline-grey-border) solid !important;
+								   box-shadow: 0 0 1px var(--theme-outline-grey-shadow) !important; }
+
+.content-blocking-category.selected { background: var(--theme-gradient-cards-purple) !important;
+									  filter: brightness(125%) !important;
+									  color: var(--theme-text-default) !important;
+									  border: 1px solid var(--theme-outline-purple-border) !important;
+									  box-shadow: 0 0 1px var(--theme-outline-purple-shadow) !important; }
+
+
+
+/*.container,*/
+.content-blocking-warning,
+.content-blocking-warning.reload-tabs:not([hidden]),
+.info-panel, .extension-controlled { background: var(--theme-gradient-green) !important;
+									 border: 1.5px var(--theme-outline-button-green) solid !important;
+									 box-shadow: 0 0 1px var(--theme-outline-button-green-shadow) !important;
+									 border-radius: 0.3em !important;
+									 padding-top: 10px !important;
+									 padding-bottom: 10px !important; }
+
+.sync-group { color: var(--theme-text-default) !important;
+			  background: var(--theme-background) !important;
+			  border: none !important;
+			  box-shadow: none !important;
+			  border-radius: none !important; }
+
+
+											}
+
+
+
+
+
+@-moz-document url-prefix(about:addons), url-prefix(chrome://mozapps/content/extensions/) {
+
+
+			   
+			   
+/* RECOMMENDED CARD */
+#main discovery-pane recommended-addon-list recommended-addon-card div.card.addon,
+#main recommended-extensions-section recommended-addon-list recommended-addon-card div.card.addon,
+#main recommended-themes-section recommended-addon-list recommended-addon-card div.card.addon { color: var(--theme-text-default) !important;
+																								background: var(--theme-gradient-cards-grey) !important;
+																								color: var(--theme-text-highlight) !important;
+																								border: 1px solid var(--theme-outline-grey-border) !important;
+																								box-shadow: 0 0 0.5px var(--theme-outline-grey-shadow) !important;
+																								border-radius: 0.3em !important; }
+/* ENABLED CARD */
+addon-card[expanded] .addon.card,
+#main addon-list section addon-card div.card.addon { color: var(--theme-text-highlight) !important;
+													 background: var(--theme-gradient-cards-purple) !important;
+													 border: 1px var(--theme-outline-purple-border) solid !important;
+													 box-shadow: 0 0 1px var(--theme-outline-purple-shadow) !important;}
+/* HOVER ENABLED CARD */
+addon-card[expanded] .addon.card:hover,
+#main addon-list section addon-card div.card.addon:hover {	color: var(--theme-text-highlight) !important;
+															background: var(--theme-gradient-cards-purple-active) !important;
+															border: 1px var(--theme-outline-purple-border) solid !important;
+															box-shadow: 0 0 1px var(--theme-outline-purple-shadow) !important; }
+		/* DISABLED CARD */
+addon-card[expanded] .addon.card[active="false"],		
+addon-card[expanded] .addon.card[active="false"]:focus-within,
+#main addon-list section addon-card div.card.addon[active="false"],
+#main addon-list section addon-card div.card.addon[active="false"]:focus-within {	color: var(--theme-text-disabled) !important;
+																					background: var(--theme-gradient-cards-grey) !important;
+																					border: 1px var(--theme-outline-grey-border) solid !important;
+																					box-shadow: 0 0 1px var(--theme-outline-grey-shadow) !important; }
+/* HOVER DISABLED CARD */
+addon-card[expanded] .addon.card[active="false"]:hover,		
+addon-card[expanded] .addon.card[active="false"]:focus-within:hover,					
+#main addon-list section addon-card div.card.addon[active="false"]:hover,
+#main addon-list section addon-card div.card.addon[active="false"]:focus-within :hover { color: var(--theme-text-disabled) !important;
+																						 background: var(--theme-gradient-cards-grey-active) !important;
+																						 border: 1px var(--theme-outline-grey-border) solid !important;
+																						 box-shadow: 0 0 1px var(--theme-outline-grey-shadow) !important; }
+
+
+																							}
+
+
+@-moz-document url-prefix(about:preferences), url-prefix(about:addons), url-prefix(chrome://mozapps/content/extensions/) {
+
+
+
+.discopane-notice-content,
+.container([type=warning]) { background: var(--theme-gradient-orange) !important;
+							color: var(--theme-text-highlight) !important;
+							border: 1px var(--theme-outline-orange-border) solid !important;
+							box-shadow: 0 0 1px var(--theme-outline-orange-shadow) !important; }
+							
+message-bar[type=success] { background: var(--theme-gradient-green) !important;
+							color: var(--theme-text-highlight) !important;
+							border: 1px var(--theme-outline-green-border) solid !important;
+							box-shadow: 0 0 1px var(--theme-outline-green-shadow) !important; }
+							
+message-bar[type=error] { background: var(--theme-gradient-red) !important;
+						  color: var(--theme-text-highlight) !important;
+						  border: 1px var(--theme-outline-red-border) solid !important;
+						  box-shadow: 0 0 1px var(--theme-outline-red-shadow) !important; }
+
+
+																														}
+
+
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") { 
+
+
+
+
+.message-bar { background: var(--theme-gradient-purple) !important;
+			   border-radius: 4px !important;
+			   min-height: 32px !important;
+			   -moz-box-align: center !important;
+			   padding: 4px !important; }
+																							}
+
+

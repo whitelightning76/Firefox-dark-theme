@@ -1,0 +1,67 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                          PANELS                                                            -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+:root {
+
+--default-arrowpanel-background: var(--theme-menu-background) !important;
+--default-arrowpanel-color: var(--theme-menu-text-default) !important;
+--default-arrowpanel-border-color: var(--theme-menu-border-color) !important;
+--arrowpanel-background: var(--default-arrowpanel-background) !important;
+--arrowpanel-color: var(--default-arrowpanel-color) !important;
+--arrowpanel-border-color: var(--default-arrowpanel-border-color)!important;
+
+--button-color: var(--theme-button-color) !important;
+--button-hover-bgcolor:  var(--theme-button-hover-bgcolor) !important;
+--panelview-toolbarbutton-hover-bgcolor: var(--button-hover-bgcolor) !important;
+--button-active-bgcolor: var(--theme-button-active-bgcolor) !important;
+--panelview-toolbarbutton-active-bgcolor: var(--button-active-bgcolor) !important;
+
+
+--panel-description-color: var(--theme-panel-description-color) !important;
+--panel-disabled-color: var(--theme-menu-text-disabled) !important;
+--panel-shortcut-color: var(--theme-panel-shortcut-color) !important;
+
+--toolbar-bgcolor: var(--theme-toolbar-bgcolor) !important;
+--toolbar-bgimage: var(--toolbar-non-lwt-bgimage);
+--toolbar-color: var(--theme-toolbar-color) !important;
+	
+}
+
+.panel-subview-body { border: 1.25px solid var(--theme-outline-menu-grey) !important; border-radius: 8px !important; }
+
+.panel-header { background-image: var(--theme-gradient-titlebar) !important;
+				color: var(--theme-text-highlight) !important;
+				filter: brightness(125%) !important; }
+
+
+panelview .toolbarbutton-1,
+toolbarbutton.subviewbutton,
+.navigable.subviewbutton,
+menu.subviewbutton,
+menuitem.subviewbutton,
+.widget-overflow-list .toolbarbutton-1,
+.toolbaritem-combined-buttons > toolbarbutton { color: var(--theme-text-default) !important;
+												filter: brightness(85%) !important;
+												font-size: 14px !important;
+												font-family: var(--theme-font) !important;
+												border: 1px solid transparent !important; }
+
+panelview .toolbarbutton-1:not([disabled], [open], :active):is(:hover),
+toolbarbutton.subviewbutton:not([disabled], [open], :active):is(:hover),
+.navigable.subviewbutton:not([disabled], [open], :active):is(:hover),
+menu.subviewbutton:not([disabled], :active)[_moz-menuactive],
+menuitem.subviewbutton:not([disabled], :active)[_moz-menuactive],
+.widget-overflow-list .toolbarbutton-1:not([disabled], [open], :active):is(:hover),
+.toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton:not([disabled], [open], :active):is(:hover) { background: var(--theme-gradient-purple) !important;
+																																						color: var(--theme-text-highlight) !important;
+																																						filter: brightness(125%) !important;
+																																						border: 1px solid var(--theme-outline-button-purple) !important; }
+
+.subviewbutton[shortcut]::after { color: var(--theme-panel-shortcut-color) !important;  } /* hamburger menu Text after links */
+.subviewbutton-nav::after { color: var(--theme-panel-shortcut-color) !important;  }
+
+#overflowMenu-customize-button { display: none !important; } /* Overflow menu, Hides "Customize Toolbar..." button */
+
+
+
+

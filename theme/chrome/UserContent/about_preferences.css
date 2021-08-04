@@ -1,0 +1,15 @@
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document url-prefix(about:preferences) { 
+
+body { font-family: var(--theme-font) !important; }
+
+
+#generalCategory { background-image: var(--theme-gradient-titlebar) !important; }
+
+h1 { color: var(--theme-text-highlight) !important;
+     filter: brightness(125%) !important; }
+
+
+												}

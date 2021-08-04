@@ -1,0 +1,22 @@
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document url-prefix(about:support) {
+
+body { background: var(--theme-background) !important;
+	   font-family: var(--theme-font) !important; }
+
+#action-box { background: var(--theme-gradient-cards-purple) !important;
+			  color: var(--theme-text-highlight) !important;
+			  border: 1px solid var(--theme-outline-purple-border) !important;
+			  box-shadow: 0 0 1px var(--theme-outline-purple-shadow) !important; 
+			  border-radius: 0.3em !important;
+			  padding-top: 10px !important;
+			  padding-bottom: 10px !important; }
+
+
+
+
+
+}
+

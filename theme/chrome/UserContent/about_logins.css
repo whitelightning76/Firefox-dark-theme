@@ -1,0 +1,62 @@
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document url-prefix(about:logins) { 
+
+body { font-family: var(--theme-font) !important; }
+
+header { background-image: var(--theme-gradient-titlebar) !important; } /* header */
+
+
+.login-list-item { color: var(--theme-text-default) !important;
+				   background: var(--theme-background) !important; }
+
+.login-list-item:not([disabled="true"]):hover { color: var(--theme-text-highlight) !important;
+											    filter: brightness(125%) !important;
+											    background: var(--theme-gradient-purple) !important; }
+												
+.login-list-item.selected:not([disabled="true"]) { border-inline-start-color: var(--theme-outline-button-green-active) !important;
+												   color: var(--theme-text-highlight) !important;
+												   filter: brightness(125%) !important;
+												   background: var(--theme-gradient-grey) !important;}
+
+button[data-l10n-id="create-login-button"]:not(:-moz-any([disabled], [open], :active)) { background: var(--theme-gradient-purple) !important;
+																						 color: var(--theme-text-default) !important;
+																						 border: 1px solid var(--theme-outline-button-purple) !important;
+																						 border-radius: 0.3em !important; }
+
+button[data-l10n-id="create-login-button"]:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])) { background: var(--theme-gradient-grey) !important;
+																												  color: var(--theme-text-highlight) !important;
+																												  border: 1px solid var(--theme-outline-button-grey) !important; }
+
+
+button[data-l10n-id="login-item-cancel-button"]:not(:-moz-any([disabled], [open], :active)),
+button[data-l10n-id="login-item-save-changes-button"]:not(:-moz-any([disabled], [open], :active)),
+button[data-l10n-id="login-item-edit-button"]:not(:-moz-any([disabled], [open], :active)),
+button[data-l10n-id="about-logins-login-item-remove-button"]:not(:-moz-any([disabled], [open], :active)),
+.copy-button:not(:-moz-any([disabled], [open], :active)) { background: var(--theme-gradient-grey) !important;
+														   color: var(--theme-text-default) !important;
+														   border: 1px solid var(--theme-outline-button-grey) !important;
+														   border-radius: 0.3em !important;
+														   text-align: center !important; }
+
+button[data-l10n-id="login-item-cancel-button"]:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])),
+button[data-l10n-id="login-item-save-changes-button"]:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])),
+button[data-l10n-id="login-item-edit-button"]:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])),
+button[data-l10n-id="about-logins-login-item-remove-button"]:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])),
+.copy-button:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])) { background: var(--theme-gradient-purple) !important;
+																					color: var(--theme-text-highlight) !important;
+																					border: 1px solid var(--theme-outline-button-purple) !important; }
+																												  
+
+.breach-alert {  background-image: var(--theme-gradient-red) !important;
+				 color: var(--theme-text-highlight) !important;
+				 border: 1px solid var(--theme-outline-button-yellow) !important;
+				 box-shadow: 0 0 1px var(--theme-outline-button-yellow) !important; }
+
+.count { color: var(--theme-text-highlight) !important;
+		 filter: brightness(125%) !important; }
+
+
+	}
+
