@@ -16,10 +16,11 @@ Not everything is themed yet, I hope to finish it one day.
 
 
 ![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+Format: (url)
 
 
-![alt text] (images/main.png "main")
+![Alt Text](images/main.png)
+
 
 
 ![main] (http://github.com/whitelightning76/Firefox-dark-theme/blob/main/images/main.png)
