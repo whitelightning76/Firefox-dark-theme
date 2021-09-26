@@ -1,4 +1,5 @@
 # Firefox Nightly - darker-theme
+features, switchable sidebar, floating scrollbar,restart in menu,middle click undo close tab.
 --------------------------------------------------------------------------------------------
 
 original java script loader used from here:  https://github.com/MrOtherGuy/fx-autoconfig
