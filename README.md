@@ -15,17 +15,11 @@ just copy over the files from the Theme folder to the profile directory and copy
 Not everything is themed yet, I hope to finish it one day.
 
 
-![GitHub Logo](/images/logo.png)
-Format: (url)
-
-
 ![Alt Text](images/main.png)
 
+![Alt Text](images/settings.png)
+
+![Alt Text](images/addons.png)
 
 
-![main] (http://github.com/whitelightning76/Firefox-dark-theme/blob/main/images/main.png)
-
-[IMG]http://github.com/whitelightning76/Firefox-dark-theme/blob/main/images/settings.pngg[/IMG]
-
-[IMG]http://github.com/whitelightning76/Firefox-dark-theme/blob/main/images/addons.pngg[/IMG]
 
