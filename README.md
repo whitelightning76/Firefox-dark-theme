@@ -6,5 +6,5 @@ original java script loader used from here:  https://github.com/MrOtherGuy/fx-au
 
 original curved tabs from here: https://github.com/wilfredwee/photon-australis
 
-just copy over the files to the profile directory
+just copy over the files from the Theme folder to the profile directory
 
