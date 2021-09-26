@@ -19,7 +19,7 @@ Not everything is themed yet, I hope to finish it one day.
 Format: ![Alt Text](url)
 
 
-![alt text]images/main.png "main")
+![alt text] (images/main.png "main")
 
 
 ![main] (http://github.com/whitelightning76/Firefox-dark-theme/blob/main/images/main.png)
