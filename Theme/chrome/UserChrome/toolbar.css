@@ -1,0 +1,70 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                      TOOLBAR                                                               -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+:root { --toolbar-bgcolor: var(--theme-toolbar-bgcolor) !important;
+		--toolbar-color: var(--theme-toolbar-color) !important; }
+
+/* menubar */
+menubar > menu:-moz-lwtheme:not([disabled="true"]) { appearance: none !important;
+													 background: transparent !important; }
+
+/* titlebar */
+#navigator-toolbox:-moz-lwtheme {  background-image: var(--theme-titlebar-gradient) !important; }
+
+#tabs-newtab-button,
+#alltabs-button { background: transparent !important; }
+
+.titlebar-buttonbox { appearance: none !important;
+					  background-image: transparent !important; }
+
+/* create space above navbar */
+#nav-bar { padding-top: 4px !important; }
+
+/* create space below navigation */
+#navigator-toolbox { border-bottom: 4px solid var(--theme-toolbar-bgcolor) !important; }
+
+
+
+/* Customize Toolbar */
+#customization-palette-container { background: var(--theme-titlebar-gradient) !important; }
+
+toolbarpaletteitem[place="palette"] { background: var(--theme-panel-block-transparent) !important;
+									  border-radius: 0.5em; }
+
+#customization-panelHolder { border: 1.85px solid transparent !important;
+							 border-image: 1.85 1.85 1.85 1.85 var(--theme-panel-border-gradient) !important; }
+
+#customization-panelWrapper > .panel-arrowbox > .panel-arrow[side="top"] { fill: transparent !important; stroke: transparent !important; }
+
+
+
+#customization-toolbar-visibility-button,
+.customizationmode-button { background: var(--theme-background) !important;
+							color: var(--theme-text-highlight) !important;
+							border: 1.25px solid transparent !important;
+							border-image: 1.25 1.25 1.25 1.25 var(--theme-panel-border-gradient) !important;
+							border-radius: 0.25em !important; }
+
+#customization-reset-button,
+#customization-undo-reset-button,
+#customization-done-button { background: var(--theme-button-gradient-purple) !important;
+							 color: var(--theme-panel-color) !important;
+							 border: 1px solid var(--theme-panel-border-color-purple) !important; 
+							 border-radius: 0.3em !important; }
+
+#customization-reset-button:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])) { color: var(--theme-panel-color) !important;
+																								   background: var(--theme-button-gradient-red) !important;
+																								   border: 1px solid var(--theme-panel-border-color-red) !important;
+																								   border-radius: 0.3em !important; }
+
+#customization-undo-reset-button:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])) { color: var(--theme-panel-color-highlight) !important;
+																									    filter: brightness(125%) !important;
+																									    background: var(--theme-button-gradient-orange) !important;
+																									    border: 1px solid var(--theme-panel-border-color-orange) !important; }
+
+#customization-done-button:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])) { color: var(--theme-panel-color-highlight) !important;
+																								  filter: brightness(125%) !important;
+																								  background: var(--theme-button-gradient-green) !important;
+																								  border: 1px solid var(--theme-panel-border-color-green) !important; }
+		

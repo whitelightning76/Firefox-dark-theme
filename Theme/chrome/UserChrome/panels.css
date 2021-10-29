@@ -1,0 +1,167 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                          PANELS                                                            -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+
+:root * { /* remove spaces from arrowpanel */
+		  --arrowpanel-menuitem-margin: 2px !important;
+		  --arrowpanel-menuitem-padding: 4px 8px !important;
+		  --panel-subview-body-padding: 4px 0 !important;
+
+		  /* panel background */
+		  --default-arrowpanel-background: var(--theme-panel-bgcolor) !important;
+		  --arrowpanel-background: var(--theme-panel-bgcolor) !important;
+		  --panel-background: var(--theme-panel-bgcolor) !important;
+
+		  /* panel text color */
+		  --default-arrowpanel-color: var(--theme-panel-color) !important;
+		  --arrowpanel-color: var(--theme-panel-color) !important;
+		  --panel-color: var(--theme-panel-color) !important;
+
+		  /* panel border color */
+		  --default-arrowpanel-border-color: var(--theme-panel-border-color-purple) !important;
+		  --arrowpanel-border-color: var(--theme-panel-border-color-purple) !important;
+		  --panel-border-color: var(--theme-panel-border-color-purple) !important;
+
+		  /* panel menuitem hover active */
+		  --button-hover-bgcolor:  var(--theme-button-hover-bgcolor) !important;
+		  --button-active-bgcolor: var(--theme-button-active-bgcolor) !important;
+
+		  /* panel description */
+		  --panel-description-color: var(--theme-panel-description-color) !important;
+
+		  /* panel shortcuts */
+		  --panel-shortcut-color: var(--theme-panel-shortcut-color) !important;
+
+		  /* panel disabled */
+		  --panel-disabled-color: var(--theme-panel-disabled-color) !important;
+
+		  /* empty page background */
+		  --tabpanel-background-color: var(--theme-tabpanel-background-color) !important;
+
+		  /* remove rounded corners from menu's */
+		  --arrowpanel-border-radius: 0 !important;
+		  --subviewbutton-border-radius: 0 !important;
+
+		}
+
+/* Overflow menu, Hides "Customize Toolbar..." button */
+#overflowMenu-customize-button { display: none !important; } 
+
+/* panel font */
+panelview { filter: brightness(95%) !important;
+			font-size: 12px !important;
+			font-family: var(--theme-font) !important; }
+
+/* panel border */
+.panel-subview-body { /*min-width: 230px !important;*/
+					  border: 1.65px solid transparent !important;
+					  box-shadow: none !important;
+					  border-image: 1.65 1.65 1.65 1.65 var(--theme-panel-border-gradient) !important; }
+
+/* remove extra lines on some panels */
+#editBookmarkPanel > .panel-subview-body,
+#widget-overflow-mainView > .panel-subview-body { border: none !important; box-shadow: none !important;}
+
+/* panel header */
+#protections-popup-mainView-panel-header,
+.panel-header { background-image: var(--theme-panel-header-gradient) !important;
+				color: var(--theme-panel-color-highlight) !important;
+				filter: brightness(125%) !important; }
+
+/* panel separator */
+menuseparator,
+toolbarseparator { border-top: 1px solid var(--theme-panel-bgcolor) !important; }
+
+/* panel menuitem */
+.protections-popup-footer-button,
+.protections-popup-category,
+panelview .toolbarbutton-1,
+toolbarbutton.subviewbutton,
+.navigable.subviewbutton,
+menu.subviewbutton,
+menuitem.subviewbutton,
+.widget-overflow-list .toolbarbutton-1,
+.toolbaritem-combined-buttons > toolbarbutton { filter: brightness(95%) !important;
+												border: 0.40px solid transparent !important;
+												box-shadow: 0 0 0.10px transparent !important;
+												border-radius: 0px !important;
+												padding-block: 0.5em !important;
+												padding-inline-start: 1em !important; }
+
+/* panel menuitem hover */
+.protections-popup-footer-button:not([disabled], [open], :active):is(:hover),
+.protections-popup-category:not([disabled], [open], :active):is(:hover),
+panelview .toolbarbutton-1:not([disabled], [open], :active):is(:hover),
+toolbarbutton.subviewbutton:not([disabled], [open], :active):is(:hover),
+.navigable.subviewbutton:not([disabled], [open], :active):is(:hover),
+menu.subviewbutton:not([disabled], :active)[_moz-menuactive],
+menuitem.subviewbutton:not([disabled], :active)[_moz-menuactive],
+.widget-overflow-list .toolbarbutton-1:not([disabled], [open], :active):is(:hover),
+.toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton:not([disabled], [open], :active):is(:hover) { background: var(--theme-panel-menuitem-hover-gradient-purple) !important;
+																																						color: var(--theme-panel-color-highlight) !important;
+																																						filter: brightness(150%) !important;
+																																						border: 0.40px solid var(--theme-panel-menuitem-hover-border) !important;
+																																						box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+/* Update button in firefox menu */
+.panel-banner-item:not(:-moz-any([disabled], [open], :active)),
+.addon-banner-item:not(:-moz-any([disabled], [open], :active)) { background: var(--theme-panel-menuitem-hover-gradient-green) !important;
+																 color: var(--theme-panel-color) !important;
+																 filter: brightness(85%) !important;
+																 border: 0.40px solid var(--theme-panel-border-color-green) !important;
+																 box-shadow: 0 0 0.10px transparent !important; }
+
+.panel-banner-item:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])),
+.panel-banner-item:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])) { color: var(--theme-panel-color-highlight) !important;
+																						  filter: brightness(125%) !important;
+																						  background: var(--theme-panel-menuitem-hover-gradient-green-active) !important;
+																						  border: 0.40px solid var(--theme-panel-border-color-green-active) !important;
+																						  box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+/* protection panel */
+#protections-popup-trackers-blocked-counter-description { color: var(--theme-panel-border-color-orange) !important;
+														  filter: brightness(125%) !important;
+														  font-size: 15px !important;
+														  font-family: var(--theme-font) !important; }
+
+.panel-footer > button:not(:-moz-any([disabled], [open], :active)) { background: var(--theme-panel-menuitem-hover-gradient-purple) !important;
+																	 color: var(--theme-panel-color) !important;
+																	 border: 1px solid var(--theme-button-hover-bgcolor) !important; 
+																	 border-radius: 8px !important; }
+
+.panel-footer > button:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])) { background: var(--theme-panel-menuitem-hover-gradient-grey) !important;
+																							  color: var(--theme-panel-color-highlight) !important;
+																							  border: 1px solid var(--theme-panel-border-color-grey) !important; }
+
+
+
+
+/* Bookmark panel */
+#editBookmarkPanel { background: var(--theme-panel-bgcolor) !important;
+					 border: 1.65px solid transparent !important;
+					 box-shadow: none !important;
+					 border-image: 1.65 1.65 1.65 1.65 var(--theme-panel-border-gradient) !important; }
+
+#editBookmarkPanelContent { color: var(--theme-panel-color-highlight) !important; }
+
+#editBookmarkPanel .expander-up:hover,
+#editBookmarkPanel .expander-down:hover { border: 0.40px var(--theme-panel-border-color-grey) solid !important;
+										  box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+#editBookmarkPanel .expander-up,
+#editBookmarkPanel .expander-down { border: 0.40px var(--theme-panel-border-color-purple) solid !important;
+									box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important;	
+									border-radius: 8px !important; }
+
+#editBookmarkPanel richlistbox > checkbox .checkbox-check,
+#editBookmarkPanelBottomContent > checkbox .checkbox-check {  background-color: transparent !important;
+											  fill: var(--theme-panel-color) !important;
+											  border-color: var(--theme-panel-color) !important;
+											  filter: brightness(100%) !important; }
+		
+#editBookmarkPanel richlistbox > checkbox .checkbox-check[checked],
+#editBookmarkPanelBottomContent > checkbox .checkbox-check[checked] { background-color: transparent !important;
+													  border-color: var(--theme-panel-color-highlight) !important;
+													  fill: var(--theme-checkbox-check) !important;
+													  filter: brightness(125%) !important; }
+

@@ -1,0 +1,12 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                          TEXTLINKS                                                         -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+.text-link { color: var(--theme-panel-color) !important;
+			 text-decoration: underline !important; }
+
+.text-link:hover { color: var(--theme-text-highlight) !important;
+				   filter: brightness(150%) !important; }
+
+
+

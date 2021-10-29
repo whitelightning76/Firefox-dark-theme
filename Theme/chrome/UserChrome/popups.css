@@ -1,0 +1,72 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                        POPUPS                                                              -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Remove navigation panel from context menu */
+#toolbar-context-navigation, #context-navigation, #context-sep-navigation { display: none !important; } 
+
+/* make menu rounder */
+.menupopup-arrowscrollbox { border-radius: 0px !important;  }
+
+/* set shadow to none */
+panel, menupopup { --windows-panel-box-shadow: none !important; }
+
+/* main popup menu */
+menupopup { font-size: 12px !important;
+			font-family: var(--theme-font) !important;
+			border: 1.65px solid transparent !important;
+			box-shadow: none !important;
+			border-image: 1.65 1.65 1.65 1.65 var(--theme-panel-border-gradient) !important;
+			border-radius: 0px !important;
+			--panel-border-radius: 0px !important;
+			filter: brightness(95%) !important; }
+
+menu { border-radius: 0px !important; }
+
+/* menuitems */
+menu,
+menuitem,
+menucaption { background: var(--theme-panel-bgcolor) !important;
+			  color: var(--theme-panel-color) !important;
+			  border: 0.40px solid transparent !important;
+			  box-shadow: 0 0 0.10px transparent !important; }
+
+menu:-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+menuitem:-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]), 
+menucaption:-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]) {	background: var(--theme-panel-menuitem-hover-gradient-purple) !important;
+																				color: var(--theme-panel-color-highlight) !important;
+																				filter: brightness(150%) !important;
+																				border: 0.40px solid var(--theme-panel-menuitem-hover-border) !important;
+																				box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+/*main menubar */
+#main-menubar > menu { font-family: var(--theme-font) !important; }
+
+/* main menubar bookmarks*/
+.bookmark-item { fill: var(--theme-panel-color) !important; }
+
+/* checkbox */ 
+menuitem[checked="true"] > .menu-iconic-left { appearance: none !important;
+											   fill: var(--theme-checkbox-check) !important; }
+											   
+
+/* places toolbar */
+#PersonalToolbar .toolbarbutton-1,
+toolbarbutton.bookmark-item:not(.subviewbutton) { appearance: none !important;
+												  color: var(--theme-panel-color) !important;
+												  border: 0.40px solid transparent !important;
+												  box-shadow: 0 0 0.10px transparent !important;
+												  border-radius: 0px !important;
+												  padding: 1px !important;
+												  margin: 1px !important;
+
+												  --arrowpanel-menuitem-margin: 0px !important;
+												  --arrowpanel-menuitem-padding: 0px 0px !important;
+												  --panel-subview-body-padding: 0px 0 !important; }
+
+#PersonalToolbar .toolbarbutton-1:hover,
+toolbarbutton.bookmark-item:not(.subviewbutton):hover {	background: var(--theme-panel-menuitem-hover-gradient-purple) !important;
+														color: var(--theme-panel-color-highlight) !important;
+														filter: brightness(150%) !important;
+														border: 0.40px solid var(--theme-panel-menuitem-hover-border) !important;
+														box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }

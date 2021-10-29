@@ -1,0 +1,89 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                          URL BAR                                                           -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+:root {
+
+		/* urlbar border */
+		--toolbar-field-border-color: var(--theme-panel-border-color-purple) !important;
+
+		/* webadress after suggestion */
+		--urlbar-popup-url-color: var(--theme-panel-shortcut-color) !important;
+
+		/* input suggestion background */
+		--autocomplete-popup-highlight-background: var(--theme-panel-bgcolor) !important;
+
+		/* input suggestion text */
+		--autocomplete-popup-highlight-color: var(--theme-panel-color-highlight) !important;
+}
+
+
+/* font */
+#urlbar, #searchbar { font-size: 17px !important;
+					  font-family: var(--theme-font) !important; }
+					  
+/* main urlbar */
+#urlbar[breakout] > #urlbar-input-container { background: var(--theme-panel-bgcolor) !important;
+											  border: 0.85px solid var(--theme-urlbar-border-color) !important;
+											  box-shadow: none !important;
+											  border-radius: 0px !important; }
+											  
+#urlbar[breakout][breakout-extend] > #urlbar-input-container,
+#urlbar[breakout] > #urlbar-input-container:hover { color: var(--theme-panel-color-highlight) !important;
+													filter: brightness(125%) !important;
+													border: 0.85px solid transparent !important;
+													box-shadow: none !important;
+													border-image: 0.85 0.85 0.85 0.85 var(--theme-panel-border-gradient) !important;
+													border-radius: 0px !important; }
+
+#urlbar[breakout][breakout-extend] > #urlbar-input-container { border-radius: 0px !important; }
+
+#urlbar[breakout][breakout-extend][breakout-extend-animate] > #urlbar-background { background: var(--theme-panel-bgcolor) !important;
+																				   border-left: 0.85px solid transparent !important;
+																				   border-right: 0.85px solid transparent !important;
+																				   border-bottom: 0.85px solid transparent !important;
+																				   box-shadow: none !important;
+																				   border-image: 0 0.85 0.85 0.85 var(--theme-panel-border-gradient) !important; }
+
+.urlbarView:not([noresults]) > .search-one-offs:not([hidden]) { border-top: 0.85px solid transparent !important;
+																border-image: 1 0 0 0 var(--theme-panel-border-gradient) !important; }
+
+/* remove dynamic search result */
+[type="dynamic"])[selected] > .urlbarView-row-inner { display: none !important; }
+
+
+/* search results */
+.urlbarView-row { color: var(--theme-toolbar-color) !important;
+				  background: var(--theme-panel-bgcolor) !important;
+				  font-size: 15px !important;
+				  font-family: var(--theme-font) !important;
+				  border: 1px solid transparent !important;
+				  box-shadow: 0 0 0.10px transparent !important;
+				  margin: 0px !important;
+				  padding: 0px !important; }
+
+.urlbarView-row:hover { background-image: var(--theme-urlbar-row-hover) !important;
+						color: var(--theme-panel-color-highlight) !important;
+						filter: brightness(125%) !important;
+						border: 1px solid var(--theme-button-hover-bgcolor) !important;
+						box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+/* url that comes after the suggestion */
+.urlbarView-url { color: var(--theme-urlbar-row-url) !important; }
+
+/* urlbar text selection */
+#urlbar ::-moz-selection,
+.searchbar-textbox ::-moz-selection { background: var(--theme-button-hover-bgcolor) !important;
+									  color: var(--theme-reload-icon-hover) !important; }
+
+
+
+
+
+
+
+
+
+
+
+
+
