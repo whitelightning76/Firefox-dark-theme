@@ -1,0 +1,29 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                     USERCHROME.CSS                                                         -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+@import url(colors.css);
+@import url(./UserChrome/userChrome-dark.css); /* curved tabs */
+@import url(./UserChrome/toolbar.css);
+@import url(./UserChrome/panels.css);
+@import url(./UserChrome/popups.css);
+@import url(./UserChrome/sidebar.css);
+@import url(./UserChrome/urlbar.css);
+@import url(./UserChrome/tabs.css);
+@import url(./UserChrome/buttons.css);
+@import url(./UserChrome/textlink.css);
+@import url(./UserChrome/findbar.css);
+
+
+
+/*@import url(./UserChrome/organiser.css);*/
+/*@import url(./UserChrome/downloads.css);*/
+@import url(./UserChrome/userChrome.css);
+
+
+
+
+
+
+
+
+
