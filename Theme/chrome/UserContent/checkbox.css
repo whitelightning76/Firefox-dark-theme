@@ -1,0 +1,28 @@
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") { 
+
+.checkbox-check{ background-color: transparent !important;
+				 fill: var(--theme-panel-color) !important;
+				 border-color: var(--theme-panel-color) !important;
+				 filter: brightness(100%) !important; }
+				 
+.checkbox-check[checked]{ background-color: transparent !important;
+						  border-color: var(--theme-panel-color-highlight) !important;
+						  fill: var(--theme-checkbox-check) !important;
+						  filter: brightness(125%) !important; }
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                        CHECKBOXES    	                                                    -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/	
+
+* .checkbox-check { fill: var(--theme-checkbox-check) !important; }
+
+
+
+																							}
+
+

@@ -1,0 +1,141 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                     USERCONTENT                                                            -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+:root { --in-content-page-background: var(--theme-panel-bgcolor) !important;
+		--in-content-page-color: var(--theme-panel-color) !important;
+
+
+		--in-content-box-info-background: var(--theme-button-gradient-purple) !important;
+		--in-content-focus-outline-color: var(--theme-panel-border-color-purple) !important;
+		--in-content-deemphasized-text: var(--theme-panel-color-highlight) !important;
+
+		--in-content-table-background: var(--theme-panel-bgcolor) !important;
+		--in-content-table-border-dark-color: var(--theme-panel-border-color-purple) !important;
+		--in-content-table-header-background: var(--theme-panel-border-color-purple) !important;
+		--in-content-table-header-color: var(--theme-panel-color-highlight) !important;
+
+		--in-content-box-background: var(--theme-panel-bgcolor) !important;
+		--in-content-box-background-odd: var(--theme-panel-bgcolor) !important;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") { 
+
+body { font: var(--theme-font) !important; }
+
+richlistbox[id="categories"] { border: none !important; }
+
+#category-general:not([disabled]),
+#category-home:not([disabled]),
+#category-search:not([disabled]),
+#category-privacy:not([disabled]),
+#category-sync:not([disabled]),
+#category-experimental:not([disabled]),
+#category-discover:not([disabled]),
+#category-locale:not([disabled]),
+#category-extension:not([disabled]),
+#category-service:not([disabled]),
+#category-theme:not([disabled]),
+#category-plugin:not([disabled]),
+#category-dictionary:not([disabled]),
+#category-experiment:not([disabled]),
+#category-legacy:not([disabled]),
+#category-availableUpdates:not([disabled]),
+#category-recentUpdates:not([disabled]),
+#categories > .category:not([disabled]),
+#categories > .category:not([disabled]) { color: var(--theme-panel-color-inactive) !important;
+										  filter: brightness(75%) !important;
+										  background: var(--theme-panel-bgcolor) !important;
+										  border: 0px !important!; }
+
+#category-general:not([disabled]):hover,
+#category-home:not([disabled]):hover,
+#category-search:not([disabled]):hover,
+#category-privacy:not([disabled]):hover,
+#category-sync:not([disabled]):hover,
+#category-experimental:not([disabled]):hover,
+#category-discover:not([disabled]):hover,
+#category-locale:not([disabled]):hover,
+#category-extension:not([disabled]):hover,
+#category-service:not([disabled]):hover,
+#category-theme:not([disabled]):hover,
+#category-plugin:not([disabled]):hover,
+#category-dictionary:not([disabled]):hover,
+#category-experiment:not([disabled]):hover,
+#category-legacy:not([disabled]):hover,
+#category-availableUpdates:not([disabled]):hover,
+#category-recentUpdates:not([disabled]):hover,
+#categories > .category:not([disabled]):hover,
+#categories > .category:not([disabled]):hover { color: var(--theme-panel-color-highlight) !important;
+												filter: brightness(150%) !important;
+												background: var(--theme-panel-bgcolor) !important;
+												border: none !important; }
+
+#category-general[selected]:not([disabled]),
+#category-home[selected]:not([disabled]),
+#category-search[selected]:not([disabled]),
+#category-privacy[selected]:not([disabled]),
+#category-sync[selected]:not([disabled]),
+#category-experimental[selected]:not([disabled]),
+#category-discover[selected]:not([disabled]),
+#category-locale[selected]:not([disabled]),
+#category-extension[selected]:not([disabled]),
+#category-service[selected]:not([disabled]),
+#category-theme[selected]:not([disabled]),
+#category-plugin[selected]:not([disabled]),
+#category-dictionary[selected]:not([disabled]),
+#category-experiment[selected]:not([disabled]),
+#category-legacy[selected]:not([disabled]),
+#category-availableUpdates[selected]:not([disabled]),
+#category-recentUpdates[selected]:not([disabled]),
+#categories > .category[selected]:not([disabled]),
+#categories > .category.selected:not([disabled]) { font-size: 14px !important;
+												   color: var(--theme-panel-color-highlight) !important;
+												   filter: brightness(125%) !important;
+												   background: var(--theme-panel-bgcolor) !important;
+												   border: none !important; }
+
+/* fix for container dialogue border */
+#containersView { border: 1px solid var(--theme-panel-border-color-purple) !important;  }
+
+
+
+:where(textarea, input[type="text"], input[type="search"], input[type="password"], input[type="url"]) {
+    appearance: none !important;
+    border-style: none !important;
+    outline: none !important;
+}
+
+
+/* disable focusring */
+:-moz-focusring {
+    outline: unset !important;
+    outline-offset: unset !important;
+}
+
+
+  /* These elements can handle outline themselves when themed, so we use
+   * outline-style: auto and skip rendering the outline only when themed and
+   * the theme allows so */
+* { outline-style: none !important; }
+
+																							}
+
+
+
+
+																													  
+																													  
+																													  

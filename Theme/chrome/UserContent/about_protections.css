@@ -1,0 +1,36 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                  ABOUT:PROTECTIONS                                                         -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document url-prefix(about:protections) {  
+
+body { font-family: var(--theme-font) !important; }
+
+#report-title { background: var(--theme-cards-gradient-purple) !important;
+				color: var(--theme-panel-color-highlight) !important;
+				border: 0.40px solid var(--theme-panel-border-color-purple) !important;
+				box-shadow: 0 0 1px var(--theme-panel-color-highlight) !important; 
+				border-radius: 8px !important;
+				padding-top: 10px !important;
+				padding-bottom: 10px !important;
+				text-align: center !important; }
+				
+				
+button[data-l10n-id="monitor-manage-breaches-link"]:not(:-moz-any([disabled], [open], :active))  { background: var(--theme-button-gradient-grey) !important;
+																								   color: var(--theme-panel-color) !important;
+																								   border: 1px solid var(--theme-panel-border-color-grey) !important;
+																								   border-radius: 8px !important; }			
+				
+button[data-l10n-id="monitor-manage-breaches-link"]:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])) { background: var(--theme-button-gradient-purple) !important;
+																														   color: var(--theme-panel-color-highlight) !important;
+																														   border: 1px solid var(--theme-panel-border-color-purple) !important; }
+
+			
+											}
+
+
+
+

@@ -1,0 +1,22 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                 ABOUT:BUILDCONFIG                                                          -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document url-prefix(about:buildconfig) {
+
+body { font-family: var(--theme-font) !important; }
+
+.container { border: 0.40px solid var(--theme-panel-border-color-purple) !important; 
+			 box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+h1 { background-image: var(--theme-titlebar-gradient) !important;
+	 color: var(--theme-panel-color-highlight) !important;
+     filter: brightness(125%) !important;
+	 text-align: center !important;  }
+
+
+
+											}

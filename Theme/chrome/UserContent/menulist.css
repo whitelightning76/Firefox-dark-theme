@@ -1,0 +1,92 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                       MENULIST                                                             -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") { 
+
+
+menulist > menupopup { background: var(--theme-panel-bgcolor) !important;
+					   color: var(--theme-panel-color) !important;
+					   border: 0.40px var(--theme-panel-border-color-purple) solid !important;
+					   box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+menulist > menupopup > menu,
+menulist > menupopup > menuitem,
+menulist > menupopup > menucaption { background: var(--theme-panel-bgcolor) !important;
+									 color: var(--theme-panel-color) !important;
+									 filter: brightness(85%) !important;
+									 border: 0.40px solid transparent !important;
+									 box-shadow: 0 0 0.10px transparent !important; }
+
+menulist > menupopup > menu:not([disabled="true"])[selected="true"],
+menulist > menupopup > menuitem:not([disabled="true"]):hover,
+menulist > menupopup > menucaption:not([disabled="true"]):hover { background: var(--theme-button-gradient-purple) !important;
+																  color: var(--theme-panel-color-highlight) !important;
+																  filter: brightness(125%) !important;
+																  border: 0.40px solid var(--theme-panel-border-color-purple) !important;
+																  box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+menulist > menupopup > menu:not([disabled="true"])[selected="true"],
+menulist > menupopup > menuitem:not([disabled="true"])[selected="true"],
+menulist > menupopup > menucaption:not([disabled="true"])[selected="true"] { background: var(--theme-button-gradient-grey) !important;
+																			 color: var(--theme-panel-color-highlight) !important;
+																			 filter: brightness(125%) !important;
+																			 border: 0.40px var(--theme-panel-border-color-grey) solid !important;
+																			 box-shadow: 0 0 0.10px transparent !important; }
+
+menulist[id="defaultFont"],
+menulist[id="defaultFontSize"],
+menulist[id="defaultZoom"],
+menulist[id="selectLangs"],
+menulist[id="availableLanguages"],
+menulist[id="defaultFontType"],
+menulist[id="sizeVar"],
+menulist[id="serif"],
+menulist[id="sans-serif"],
+menulist[id="monospace"],
+menulist[id="sizeMono"],
+menulist[id="minSize"],
+menulist[id="useDocumentColors"],
+menulist[id="homeMode"],
+menulist[id="newTabMode"],
+#homeContentsGroup [data-subcategory] > vbox menulist,
+menulist[id="defaultEngine"],
+menulist[id="blockCookiesMenu"],
+menulist[id="trackingProtectionMenu"],
+menulist[id="sanitizeDurationChoice"],
+menulist[id="historyMode"],
+menulist[label="Block Audio"],
+menulist[id="minSize"] { background: var(--theme-panel-bgcolor) !important;
+						 border: 0.40px var(--theme-panel-border-color-purple) solid !important;
+						 box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+menulist[id="defaultFont"]:hover,
+menulist[id="defaultFontSize"]:hover,
+menulist[id="defaultZoom"]:hover,
+menulist[id="selectLangs"]:hover,
+menulist[id="availableLanguages"]:hover,
+menulist[id="defaultFontType"]:hover,
+menulist[id="sizeVar"]:hover,
+menulist[id="serif"]:hover,
+menulist[id="sans-serif"]:hover,
+menulist[id="monospace"]:hover,
+menulist[id="sizeMono"]:hover,
+menulist[id="minSize"]:hover,
+menulist[id="useDocumentColors"]:hover,
+menulist[id="homeMode"]:hover,
+menulist[id="newTabMode"]:hover,
+#homeContentsGroup [data-subcategory] > vbox menulist:hover,
+menulist[id="defaultEngine"]:hover,
+menulist[id="blockCookiesMenu"]:hover,
+menulist[id="trackingProtectionMenu"]:hover,
+menulist[id="sanitizeDurationChoice"]:hover,
+menulist[id="historyMode"]:hover,
+menulist[label="Block Audio"]:hover,
+menulist[id="minSize"]:hover  { background: var(--theme-button-gradient-purple) !important; }
+
+
+																							}
+
+
+

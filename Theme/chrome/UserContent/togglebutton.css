@@ -1,0 +1,31 @@
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") { 
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                        TOGGLEBUTTON  	                                                    -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/	
+
+input[type="checkbox"].toggle-button { background: var(--theme-button-gradient-red) !important;
+									   border-color: var(--theme-panel-border-color-red) !important; }
+
+input[type="checkbox"].toggle-button:hover { background: var(--theme-button-gradient-red) !important;
+											 border-color: var(--theme-panel-border-color-red) !important;
+											 filter: brightness(150%) !important; }
+
+input[type="checkbox"].toggle-button:checked { background: var(--theme-button-gradient-green) !important;
+											   border-color: var(--theme-panel-border-color-green) !important; }
+
+input[type="checkbox"].toggle-button:checked:hover { background: var(--theme-button-gradient-green) !important;
+											         border-color: var(--theme-panel-border-color-green) !important;
+													 filter: brightness(150%) !important; }		
+
+
+
+
+																							}
+
+

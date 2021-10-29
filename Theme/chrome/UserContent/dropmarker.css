@@ -1,0 +1,15 @@
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") { 
+
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                     DROPMARKERS	                                                        -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+* .menulist-dropmarker { background: transparent !important;
+						 fill: var(--theme-reload-icon) !important; }
+
+																							}
+
+

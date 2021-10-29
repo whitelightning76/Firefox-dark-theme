@@ -1,0 +1,86 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                        TREE                                                                -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") { 
+
+
+tree { background: var(--theme-panel-bgcolor) !important;
+	   color: var(--theme-panel-color) !important;
+	   border: 0.40px solid var(--theme-panel-border-color-purple) !important;
+	   box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+#addresses,
+#credit-cards,
+listheader { background: transparent !important;
+			 border-top: 1px var(--theme-panel-border-color-purple) solid !important;
+			 border-left: 1px var(--theme-panel-border-color-purple) solid !important;
+			 border-right: 1px var(--theme-panel-border-color-purple) solid !important; }
+
+fieldset > legend,
+treecol { background: var(--theme-titlebar-gradient) !important; }
+
+fieldset > legend:hover,
+treecol:hover { filter: brightness(150%) !important; }
+
+treechildren::-moz-tree-image { fill: var(--theme-reload-icon) !important; }
+
+select[size][multiple] > option,
+treechildren::-moz-tree-row { background: var(--theme-panel-bgcolor) !important;
+							  color: var(--theme-panel-color) !important;
+							  filter: brightness(85%) !important;
+							  border: 0.40px solid transparent !important;
+							  box-shadow: 0 0 0.10px transparent !important; }
+
+select[size][multiple] > option:hover,
+treechildren::-moz-tree-row(hover) { background: var(--theme-button-gradient-purple) !important;
+									 filter: brightness(125%) !important;
+									 border: 0.40px solid var(--theme-panel-border-color-purple) !important;
+									 box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+select[size][multiple] > option:focus,
+select[size][multiple] > option:checked,
+treechildren::-moz-tree-row(selected) { background: var(--theme-button-gradient-grey) !important;
+										filter: brightness(125%) !important;
+										border: 0.40px solid var(--theme-panel-border-color-grey) !important;
+										box-shadow: 0 0 0.10px transparent !important; }
+
+
+
+treechildren::-moz-tree-image(hover),
+treechildren::-moz-tree-twisty(hover),
+treechildren::-moz-tree-cell-text(hover) { color: var(--theme-panel-color-highlight) !important; }
+
+treechildren::-moz-tree-image(selected),
+treechildren::-moz-tree-twisty(selected),
+treechildren::-moz-tree-cell-text(selected) { color: var(--theme-panel-color-highlight) !important; }
+
+richlistbox { background: var(--theme-panel-bgcolor) !important;
+			  border-bottom: 1px var(--theme-panel-border-color-purple) solid !important;
+			  border-left: 1px var(--theme-panel-border-color-purple) solid !important;
+			  border-right: 1px var(--theme-panel-border-color-purple) solid !important; }
+
+richlistbox > richlistitem { background-color: transparent !important;
+							 color: var(--theme-panel-color) !important;
+							 filter: brightness(85%) !important;
+							 border: 0.40px solid transparent !important;
+							 box-shadow: 0 0 0.10px transparent !important; }
+
+richlistbox > richlistitem:hover { background: var(--theme-button-gradient-purple) !important;
+								   color: var(--theme-panel-color-highlight) !important;
+								   filter: brightness(125%) !important;
+								   border: 0.40px solid var(--theme-panel-border-color-purple) !important;
+								   box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+richlistbox > richlistitem[selected="true"] { background: var(--theme-button-gradient-grey) !important;
+											  color: var(--theme-panel-color-highlight) !important;
+										      filter: brightness(125%) !important;
+											  border: 0.40px solid var(--theme-panel-border-color-grey) !important;
+											  box-shadow: 0 0 0.10px transparent !important; }
+
+
+																							}
+
+
+

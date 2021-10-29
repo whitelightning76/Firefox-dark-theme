@@ -1,0 +1,28 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                       ABOUT:ABOUT                                                          -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document url-prefix(about:about) {
+
+.container { min-width: 13em !important;
+			 max-width: 76em !important; }
+
+ul.columns { column-count: 4 !important;
+			 column-gap: 6em !important; }
+
+body { font-family: var(--theme-font) !important; }
+
+.container { border: 0.40px solid var(--theme-panel-border-color-purple) !important; 
+			 box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+h1 { background-image: var(--theme-titlebar-gradient) !important;
+	 color: var(--theme-panel-color-highlight) !important;
+     filter: brightness(125%) !important;
+	 text-align: center !important;  }
+
+
+
+											}

@@ -1,0 +1,50 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                        DIALOG                                                              -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") { 
+
+
+.dialogOverlay { background: transparent !important; }
+
+.dialogBox { background: var(--theme-panel-bgcolor) !important;
+			 border: 0.40px solid var(--theme-panel-border-color-purple)  !important;
+			 box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important;
+			 border-radius: 8px !important; }
+
+
+
+
+
+.options-container { background: var(--theme-panel-bgcolor) !important;
+					 border: 1px var(--theme-panel-bgcolor) !important!;
+					 border-bottom: 1px solid var(--theme-panel-bgcolor) !important;
+					 border-top: 1px solid var(--theme-panel-bgcolor) !important;
+					 border-left: 1px solid var(--theme-panel-bgcolor) !important;
+					 border-right: 1px solid var(--theme-panel-bgcolor) !important;						   
+					 border-radius: 0em !important; }
+
+
+
+
+.dialog-content-box { background: var(--theme-panel-bgcolor) !important; }
+
+.dialogFrame { background: var(--theme-panel-bgcolor) !important; }
+
+.dialogTitleBar { background-image: var(--theme-titlebar-gradient) !important; }
+
+#engineList treechildren#engineChildren,
+#engineList { background: var(--theme-panel-bgcolor) !important;
+			  border: 0.40px var(--theme-panel-border-color-purple) solid !important;
+			  box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+#engineShown,
+#engineName,
+#engineKeyword  { background: var(--theme-titlebar-gradient) !important; }
+
+hbox.dialog-button-box { background: var(--theme-panel-bgcolor) !important; }
+																							}
+
+
+

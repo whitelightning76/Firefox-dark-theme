@@ -1,0 +1,96 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                        INPUT                                                               -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") { 
+
+
+
+
+#homepageGroup input,
+#ConnectionsDialog input, 
+#ConnectionsDialog textarea,
+#downloadFolder,
+#PermissionsDialog input, 
+#PermissionsDialog textarea,
+#searchInput,
+textarea,
+search-textbox,
+tree,
+richlistbox { background: var(--theme-panel-bgcolor) !important;
+			  color: var(--theme-panel-color) !important;
+			  border: 0.40px var(--theme-panel-border-color-grey) solid !important;
+			  box-shadow: 0 0 0.10px transparent !important;
+			  border-radius: 8px !important; }
+
+#searchInput:not([disabled="true"]):-moz-any([selected], :hover, :focus),
+#homepageGroup input:not([disabled="true"]):-moz-any([selected], :hover, :focus),
+#ConnectionsDialog input:not([disabled="true"]):-moz-any([selected], :hover, :focus),
+#ConnectionsDialog textarea:not([disabled="true"]):-moz-any([selected], :hover, :focus),
+#downloadFolder:not([disabled="true"]):-moz-any([selected], :hover, :focus),
+#PermissionsDialog input:not([disabled="true"]):-moz-any([selected], :hover, :focus),
+#PermissionsDialog textarea:not([disabled="true"]):-moz-any([selected], :hover, :focus),
+textarea:focus, textarea:hover,
+search-textbox[focused],
+tree:-moz-any([selected], :hover, focus-visible),
+richlistbox:-moz-any([selected], :hover, focus-visible) { background: var(--theme-panel-bgcolor) !important;
+														  color: var(--theme-panel-color-highlight) !important;
+														  border: 0.40px var(--theme-panel-border-color-purple) solid !important;
+														  box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+input[type="email"]:not([disabled="true"]),
+input[type="tel"]:not([disabled="true"]),
+input[type="text"]:not([disabled="true"]),
+input[type="password"]:not([disabled="true"]),
+input[type="url"]:not([disabled="true"]),
+input[type="number"]:not([disabled="true"]),
+input[type="file"]:not([disabled="true"]),
+textbox:not([disabled="true"]),
+textarea:not([disabled="true"]) { background-color: var(--theme-panel-bgcolor) !important;
+								  color: var(--theme-panel-color) !important; }
+
+input[type="email"]:not([disabled="true"]):not([focused]):hover,
+input[type="tel"]:not([disabled="true"]):not([focused]):hover,
+input[type="text"]:not([disabled="true"]):not([focused]):hover,
+input[type="password"]:not([disabled="true"]):not([focused]):hover,
+input[type="url"]:not([disabled="true"]):not([focused]):hover,
+input[type="number"]:not([disabled="true"]):not([focused]):hover,
+input[type="file"]:not([disabled="true"]):not([focused]):hover,
+textbox:not([disabled="true"]):not([focused]):hover,
+textarea:not([disabled="true"]):not([focused]):hover { color: var(--theme-panel-color-highlight) !important; }
+
+input[type="email"]:not([disabled="true"]):focus,
+input[type="tel"]:not([disabled="true"]):focus,
+input[type="text"]:not([disabled="true"]):focus,
+input[type="password"]:not([disabled="true"]):focus,
+input[type="url"]:not([disabled="true"]):focus,
+input[type="number"]:not([disabled="true"]):focus,
+input[type="file"]:not([disabled="true"]):focus,
+textbox:not([disabled="true"]):focus,
+textarea::not([disabled="true"]):focus { color: var(--theme-panel-color-highlight) !important;
+										 filter: brightness(125%) !important; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+																							}
+
+
+
+
+
+
+

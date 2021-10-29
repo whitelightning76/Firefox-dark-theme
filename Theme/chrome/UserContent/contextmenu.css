@@ -1,0 +1,58 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                        CONTEXTMENU    	                                                    -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/	
+
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
+
+
+
+/*context menu in "tools for all addons" in about:addons */
+button[role=menuitem] { appearance:none !important;
+						background: var(--theme-panel-bgcolor) !important;
+						color: var(--theme-panel-color) !important;
+						filter: brightness(85%) !important;
+						border: 0.40px solid transparent !important;
+						box-shadow: 0 0 0.10px transparent !important; }
+
+button[role=menuitem]:not([disabled="true"]):hover { background: var(--theme-button-gradient-purple) !important;
+													 color: var(--theme-panel-color-highlight) !important;
+													 filter: brightness(125%) !important;
+													 border: 0.40px solid var(--theme-panel-border-color-purple) !important;
+													 box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+
+
+/* menus like in about:newtab */
+.context-menu > ul { background: var(--theme-panel-bgcolor) !important;
+					 font-size: 14px !important;
+					 border: 0.40px solid var(--theme-panel-border-color-purple) !important;
+					 box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important;
+					 border-radius: 8px !important; }
+
+.context-menu > ul > li.separator { display: none !important; }
+
+.context-menu > ul > li > a,
+.context-menu > ul > li > button { appearance:none !important;
+								   background: var(--theme-panel-bgcolor) !important;
+								   color: var(--theme-panel-color) !important;
+								   font-size: 14px !important;
+								   filter: brightness(85%) !important;
+								   border: 0.40px solid transparent !important;
+								   box-shadow: 0 0 0.10px transparent !important; }
+
+.context-menu > ul > li > a:is(:focus, :hover),
+.context-menu > ul > li > button:is(:focus, :hover) { -moz-appearance: none !important;
+													  background-image: var(--theme-button-gradient-purple) !important;
+													  color: var(--theme-panel-color-highlight) !important;
+													  filter: brightness(125%) !important;
+													  border: 0.40px solid var(--theme-panel-border-color-purple) !important;
+													  box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+
+
+
+
+
+																								}
+
+

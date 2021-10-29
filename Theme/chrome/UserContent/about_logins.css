@@ -1,0 +1,89 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                     ABOUT:LOGINS                                                           -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document url-prefix(about:logins) { 
+
+body { font-family: var(--theme-font) !important; }
+
+header { background-image: var(--theme-titlebar-gradient) !important; } /* header */
+
+
+.login-list-item { border-inline-start-color: transparent !important;
+				   background: var(--theme-panel-bgcolor) !important;
+				   color: var(--theme-panel-color) !important;
+				   filter: brightness(85%) !important;
+				   border-top: 0.40px solid transparent !important;
+				   border-right: 0.40px solid transparent !important;
+				   border-bottom: 0.40px solid transparent !important;
+				   box-shadow: 0 0 0.10px transparent !important;}
+
+.login-list-item:not([disabled="true"]):hover { border-inline-start-color: var(--theme-panel-border-color-purple) !important;
+												background: var(--theme-button-gradient-purple) !important;
+												color: var(--theme-panel-color-highlight) !important;
+												filter: brightness(125%) !important;
+												border-top: 0.40px solid var(--theme-panel-border-color-purple) !important;
+												border-right: 0.40px solid var(--theme-panel-border-color-purple) !important;
+												border-bottom: 0.40px solid var(--theme-panel-border-color-purple) !important;
+												box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+												
+.login-list-item.selected:not([disabled="true"]) { border-inline-start-color: var(--theme-panel-border-color-green) !important;
+												   background: var(--theme-button-gradient-grey) !important;
+												   color: var(--theme-panel-color-highlight) !important;
+												   filter: brightness(125%) !important;
+												   border-top: 0.40px solid var(--theme-panel-border-color-grey) !important;
+												   border-right: 0.40px solid var(--theme-panel-border-color-grey) !important;
+												   border-bottom: 0.40px solid var(--theme-panel-border-color-grey) !important;
+												   box-shadow: 0 0 0.10px transparent !important; }
+
+button[data-l10n-id="create-login-button"]:not(:-moz-any([disabled], [open], :active)) { background: var(--theme-button-gradient-purple) !important;
+																						 color: var(--theme-panel-color) !important;
+																						 filter: brightness(95%) !important;
+																						 border: 1px solid var(--theme-panel-border-color-purple) !important;
+																						 box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important;
+																						 border-radius: 8px !important; }
+
+button[data-l10n-id="create-login-button"]:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])) { background: var(--theme-button-gradient-grey) !important;
+																												  color: var(--theme-panel-color-highlight) !important;
+																												  filter: brightness(125%) !important;
+																												  border: 1px solid var(--theme-panel-border-color-grey) !important;
+																												  box-shadow: 0 0 0.10px transparent !important; }
+
+
+button[data-l10n-id="login-item-cancel-button"]:not(:-moz-any([disabled], [open], :active)),
+button[data-l10n-id="login-item-save-changes-button"]:not(:-moz-any([disabled], [open], :active)),
+button[data-l10n-id="login-item-edit-button"]:not(:-moz-any([disabled], [open], :active)),
+button[data-l10n-id="about-logins-login-item-remove-button"]:not(:-moz-any([disabled], [open], :active)),
+.copy-button:not(:-moz-any([disabled], [open], :active)) { background: var(--theme-button-gradient-purple) !important;
+														   color: var(--theme-panel-color) !important;
+														   filter: brightness(95%) !important;
+														   border: 0.40px solid var(--theme-panel-border-color-purple) !important;
+														   box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important;
+														   border-radius: 8px !important;
+														   text-align: center !important; }
+
+button[data-l10n-id="login-item-cancel-button"]:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])),
+button[data-l10n-id="login-item-save-changes-button"]:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])),
+button[data-l10n-id="login-item-edit-button"]:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])),
+button[data-l10n-id="about-logins-login-item-remove-button"]:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])),
+.copy-button:-moz-any(:hover, :focus, :active, [open]):not(:-moz-any([disabled])) { background: var(--theme-button-gradient-grey) !important;
+																					color: var(--theme-panel-color-highlight) !important;
+																					filter: brightness(125%) !important;
+																					border: 0.40px solid var(--theme-panel-border-color-grey) !important;
+																					box-shadow: 0 0 0.10px transparent !important; }
+																												  
+
+.breach-alert {  background-image: var(--theme-gradient-red) !important;
+				 color: var(--theme-panel-color-highlight) !important;
+				 border: 1px solid var(--theme-panel-border-color-yellow) !important;
+				 box-shadow: 0 0 1px var(--theme-panel-border-color-yellow) !important; }
+
+.count { color: var(--theme-panel-color-highlight) !important;
+		 filter: brightness(125%) !important; }
+
+
+	}
+

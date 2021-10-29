@@ -1,0 +1,40 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                     ABOUT:NEWTAB                                                           -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document url("about:home"), url("about:newtab") { 	
+
+
+body { --newtab-background-color: #000000 !important;  
+	   background: -moz-linear-gradient(140deg, rgb(38, 38, 64) 0%, rgb(0, 0, 0) 20%, rgb(38, 38, 64) 80%) !important;
+	   height: 100% !important;
+	   margin: 0 !important;
+	   background-repeat: no-repeat !important;
+	   background-attachment: fixed !important;
+	   font-family: var(--theme-font) !important; }
+
+.personalize-button:hover, .prefs-button button:focus { transform: rotate(360deg) !important; transition: transform ease-in-out 2s !important; }
+
+[lwt-newtab-brighttext] .ds-card .ds-card-link:hover header { color: var(--theme-panel-color-highlight) !important; }
+
+/* Search box */
+.search-wrapper { display: none !important; } 
+
+/* transparent background section */
+.collapsible-section { background: rgba(204, 238, 255, 0.08) !important; border-radius: 0.5em; }
+
+/* add some space between sections */
+.top-sites { margin-bottom: 20px !important; }
+
+
+
+
+
+														}
+
+
+
+

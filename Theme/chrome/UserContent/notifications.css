@@ -1,0 +1,38 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                        NOTICES                                                             -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@-moz-document url-prefix(about:addons),
+@-moz-document url-prefix(about:preferences) {
+
+.discopane-notice-content,
+.container([type=warning]) { background: var(--theme-button-gradient-orange) !important;
+							 color: var(--theme-panel-color-highlight) !important;
+							 filter: brightness(125%) !important;
+							 border: 0.40px var(--theme-panel-border-color-orange) solid !important;
+							 box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+							
+message-bar[type=success] { background: var(--theme-button-gradient-green) !important;
+							color: var(--theme-panel-color-highlight) !important;
+							filter: brightness(125%) !important;
+							border: 0.40px var(--theme-panel-border-color-green) solid !important;
+							box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+							
+message-bar[type=error] { background: var(--theme-button-gradient-red) !important;
+						  color: var(--theme-panel-color-highlight) !important;
+						  filter: brightness(125%) !important;
+						  border: 0.40px var(--theme-panel-border-color-red) solid !important;
+						  box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+.message-bar { background: var(--theme-button-gradient-purple) !important;
+			   border-radius: 8px !important;
+			   min-height: 32px !important;
+			   -moz-box-align: center !important;
+			   padding: 4px !important; }
+
+
+												}
+
+
+

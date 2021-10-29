@@ -1,0 +1,59 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                   ABOUT:CONFIG                                                             -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document url-prefix(about:config) {
+
+body { font-family: var(--theme-font) !important; }
+
+button[data-l10n-id="about-config-intro-warning-button"] { background-image: var(--theme-button-gradient-purple) !important;
+														   color: var(--theme-panel-color) !important;
+														   filter: brightness(95%) !important;
+														   border: 0.40px solid var(--theme-panel-border-color-purple) !important;
+														   box-shadow: 0 0 0.10px transparent !important;
+														   border-radius: 8px !important;
+														   text-align: center !important; }
+
+button[data-l10n-id="about-config-intro-warning-button"]:hover { background-image: var(--theme-button-gradient-grey) !important;
+																 border: 0.40px solid var(--theme-panel-border-color-grey) !important;
+																 box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important;
+																 color: var(--theme-panel-color-highlight) !important;
+																 filter: brightness(125%) !important; }
+
+
+#about-config-search { fill-opacity: 1 !important;
+					   color: var(--theme-panel-color-highlight) !important;
+					   filter: brightness(125%) !important;
+					   background: var(--theme-panel-bgcolor) !important;
+					   border: 2.5px solid var(--theme-panel-border-color-purple) !important;
+					   box-shadow: 0 0 0.5px var(--theme-panel-color-highlight) !important;
+					   padding: 8px !important;
+					   margin: 8px !important; }
+
+#prefs > tr { background: var(--theme-panel-bgcolor) !important;
+			  color: var(--theme-panel-color) !important;
+			  filter: brightness(85%) !important;
+			  border: 0.40px solid transparent !important; 
+			  box-shadow: 0 0 0.10px transparent !important; }
+
+#prefs > tr:hover { background: var(--theme-button-gradient-purple) !important;
+					color: var(--theme-panel-color-highlight) !important;
+					filter: brightness(125%) !important;
+					border: 0.40px solid var(--theme-panel-border-color-purple) !important; 
+					box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+#prefs > tr[selected]  { background: var(--theme-button-gradient-grey) !important;
+						 color: var(--theme-panel-color-highlight) !important;
+						 filter: brightness(125%) !important;
+						 border: 0.40px solid var(--theme-panel-border-color-grey) !important; 
+						 box-shadow: 0 0 0.10px transparent !important; }
+
+					  
+											}
+
+
+
+

@@ -1,0 +1,36 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                  ABOUT:ADDONS                                                              -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document url-prefix(about:addons) {
+
+body { font-family: var(--theme-font) !important; }
+
+.main-heading,
+.recommended-heading { background-image: var(--theme-titlebar-gradient) !important; }
+
+h1 { color: var(--theme-panel-color-highlight) !important;
+     filter: brightness(125%) !important; }
+	 
+
+
+
+
+
+
+
+
+
+											}
+
+
+
+
+
+
+
+
+

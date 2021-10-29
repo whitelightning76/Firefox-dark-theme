@@ -1,0 +1,47 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                  ABOUT:PROCESSES                                                           -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document url-prefix(about:processes) {  
+
+body { font-family: var(--theme-font) !important; }
+
+th.clickable,th { background: var(--theme-titlebar-gradient) !important; }
+
+th.clickable:hover,th:hover { filter: brightness(150%) !important;  }
+
+tr { color: var(--theme-panel-color) !important;
+	 background: transparent !important;
+	 filter: brightness(85%) !important;
+	 border-top: 0.40px solid transparent !important;
+	 border-bottom: 0.40px solid transparent !important;
+	 box-shadow: 0 0 0.10px transparent !important;
+	 padding-top:2px !important;
+	 padding-bottom: 2px !important; }
+
+tr:hover { background: var(--theme-button-gradient-purple) !important;
+		   color: var(--theme-panel-color-highlight) !important;
+		   filter: brightness(125%) !important;
+		   border-top: 0.40px solid var(--theme-panel-border-color-purple) !important;
+		   border-bottom: 0.40px solid var(--theme-panel-border-color-purple) !important;
+		   box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+			   
+tr[selected] { background: var(--theme-button-gradient-grey) !important;
+			   color: var(--theme-panel-color-highlight) !important;
+			   filter: brightness(125%) !important;
+			   border-top: 0.40px solid var(--theme-panel-border-color-grey) !important;
+			   border-bottom: 0.40px solid var(--theme-panel-border-color-grey) !important;
+			   box-shadow: 0 0 0.10px transparent !important; }
+
+											}
+
+
+
+
+
+
+
+

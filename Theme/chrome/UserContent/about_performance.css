@@ -1,0 +1,70 @@
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+/* -                                                     ABOUT:PERFORMANCES                                                     -*/
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document url-prefix(about:performance) {
+	
+body { font-family: var(--theme-font) !important; }
+
+#dispatch-table { background: var(--theme-panel-bgcolor) !important; }
+
+#dispatch-thead > tr > td,
+#dispatch-thead > tr > td.clickable { background-image: var(--theme-titlebar-gradient) !important;
+									  color: var(--theme-panel-color) !important;
+									  filter: brightness(100%) !important;
+									  font-size: 14px !important; }
+
+#dispatch-thead > tr > td[id="column-name"]:hover,
+#dispatch-thead > tr > td[id="column-type"]:hover,
+#dispatch-thead > tr > td[id="column-energy-impact"]:hover,
+#dispatch-thead > tr > td[id="column-memory"]:hover { color: var(--theme-panel-color-highlight) !important;
+													  filter: brightness(150%) !important; }
+
+#dispatch-tbody > tr { color: var(--theme-panel-color) !important;
+					   background: transparent !important;
+					   filter: brightness(85%) !important;
+					   border-top: 0.40px solid transparent !important;
+					   border-bottom: 0.40px solid transparent !important;
+					   box-shadow: 0 0 0.10px transparent !important;
+					   padding-top:2px !important;
+					   padding-bottom: 2px !important; }
+						
+					
+#dispatch-tbody > tr:hover { background: var(--theme-button-gradient-purple) !important;
+							 color: var(--theme-panel-color-highlight) !important;
+							 filter: brightness(125%) !important;
+							 border-top: 0.40px solid var(--theme-panel-border-color-purple) !important;
+							 border-bottom: 0.40px solid var(--theme-panel-border-color-purple) !important;
+							 box-shadow: 0 0 0.10px var(--theme-panel-color-highlight) !important; }
+
+#dispatch-tbody > tr[selected]  { background: var(--theme-button-gradient-grey) !important;
+								  color: var(--theme-panel-color-highlight) !important;
+								  filter: brightness(125%) !important;
+								  border-top: 0.40px solid var(--theme-panel-border-color-grey) !important;
+								  border-bottom: 0.40px solid var(--theme-panel-border-color-grey) !important;
+								  box-shadow: 0 0 0.10px transparent !important; }
+
+#dispatch-tbody > tr[selected] > td:first-child,
+#dispatch-tbody > tr[selected] > td:nth-child(2),
+#dispatch-tbody > tr[selected] > td:nth-child(4),
+#dispatch-tbody > tr[selected] > td:nth-child(5)  { background: transparent !important; }
+
+.energy-impact { --bar-width: 0; background: linear-gradient(to right, var(--theme-energy-impact) calc(var(--bar-width) * 1%), transparent calc(var(--bar-width) * 1%)) !important; }
+.energy-impact:dir(rtl) { background: linear-gradient(to left, var(--theme-energy-impact) calc(var(--bar-width) * 1%), transparent calc(var(--bar-width) * 1%)) !important; }
+
+
+
+
+
+											}
+
+
+
+
+
+
+
+
