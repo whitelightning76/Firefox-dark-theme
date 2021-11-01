@@ -14,9 +14,9 @@ panel, menupopup { --windows-panel-box-shadow: none !important; }
 /* main popup menu */
 menupopup { font-size: 12px !important;
 			font-family: var(--theme-font) !important;
-			border: 1.65px solid transparent !important;
+			border: 0.90px solid transparent !important;
 			box-shadow: none !important;
-			border-image: 1.65 1.65 1.65 1.65 var(--theme-panel-border-gradient) !important;
+			border-image:  0.90  0.90  0.90  0.90 var(--theme-panel-border-gradient) !important;
 			border-radius: 0px !important;
 			--panel-border-radius: 0px !important;
 			filter: brightness(95%) !important; }

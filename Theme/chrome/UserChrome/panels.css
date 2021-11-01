@@ -55,9 +55,9 @@ panelview { filter: brightness(95%) !important;
 
 /* panel border */
 .panel-subview-body { /*min-width: 230px !important;*/
-					  border: 1.65px solid transparent !important;
+					  border:  0.90px solid transparent !important;
 					  box-shadow: none !important;
-					  border-image: 1.65 1.65 1.65 1.65 var(--theme-panel-border-gradient) !important; }
+					  border-image: 0.90 0.90 0.90 0.90 var(--theme-panel-border-gradient) !important; }
 
 /* remove extra lines on some panels */
 #editBookmarkPanel > .panel-subview-body,
